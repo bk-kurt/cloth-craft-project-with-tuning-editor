@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 1
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c671ebd95ddb8479384ebe602a8ca7d4, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 78b98c10d195d440ca8135703e49f4df, type: 3}
+  - {fileID: 21300000, guid: 3692ea405a4d141e3ac08390917e3d0e, type: 3}
+  - {fileID: 21300000, guid: ad0e16506a09f42499d7e17689260fcb, type: 3}
+  - {fileID: 21300000, guid: 1ac36b70d034846279ab5ec7590aec20, type: 3}
+  - {fileID: 21300000, guid: deb8de906701f47bcb998083040568c3, type: 3}
+  - {fileID: 21300000, guid: 6af1a0e07b46c4fd5b9f52c5d65df6a9, type: 3}
+  - {fileID: 21300000, guid: a2032e1164c6b8a4dab424986e373595, type: 3}
+  - {fileID: 21300000, guid: fe0cbc315d4364462be5d6467ae33c5a, type: 3}
+  - {fileID: 21300000, guid: 61c13151dccef49088e1f77e2c2cfac2, type: 3}
+  - {fileID: 21300000, guid: 44129ed1619764428a323777b8a8b3fb, type: 3}
+  - {fileID: 21300000, guid: 16651e6258427480fb79913d831b665e, type: 3}
+  - {fileID: 21300000, guid: 27ccd513c07bc4aba8768036352181f9, type: 3}
+  - {fileID: 21300000, guid: d2e72523553a948c7bef4bf805f6aacc, type: 3}
+  - {fileID: 21300000, guid: f507895325dc3433d82feb9e5d259968, type: 3}
+  - {fileID: 21300000, guid: 6839f95383b3c44cb9e01e38d6410074, type: 3}
+  - {fileID: 21300000, guid: b4412f5342ee54c1182c9320d7f62d9a, type: 3}
+  - {fileID: 21300000, guid: de423db340d874fe18ee108496ff103c, type: 3}
+  - {fileID: 21300000, guid: c597ce24cfe704923b1c858cac4b4ae0, type: 3}
+  - {fileID: 21300000, guid: c556c5e418b164924bbfa5e0bafbef44, type: 3}
+  - {fileID: 21300000, guid: 323912f46b7984395bdd28313a5f388a, type: 3}
+  - {fileID: 21300000, guid: 9690608531a12459eb37e24a0c769568, type: 3}
+  - {fileID: 21300000, guid: 749f1485d294f4d26b2cd0835dc0f1c4, type: 3}
+  - {fileID: 21300000, guid: 16268da5454ac4d8382edc2b72ef535f, type: 3}
+  - {fileID: 21300000, guid: 0af0ada51c0e64214ae6a77a66f3ec8d, type: 3}
+  - {fileID: 21300000, guid: 462762b5bf6014a2991a26103c0bc41b, type: 3}
+  - {fileID: 21300000, guid: 54271006beea9418db88bb07673b7ec4, type: 3}
+  - {fileID: 21300000, guid: f04cdb07afdd24322af80f64569702c6, type: 3}
+  - {fileID: 21300000, guid: 644ff227cde8f466eaa36340e36d6470, type: 3}
+  - {fileID: 21300000, guid: 95271bb7da36f44b78c8dab81a6119b8, type: 3}
+  - {fileID: 21300000, guid: 678548382bced44ddbf63e4da57d6f1e, type: 3}
+  - {fileID: 21300000, guid: 0bba59e847d0b4b77bfebca3ade30c99, type: 3}
+  - {fileID: 21300000, guid: 0305eee83df034847ae79a29f589b6ad, type: 3}
+  - {fileID: 21300000, guid: 0aab29097efe14a259ca5d9de1babb0e, type: 3}
+  - {fileID: 21300000, guid: 9a65f21922118421ba5562dbbffb2e53, type: 3}
+  - {fileID: 21300000, guid: d9a6b48911f9c4683876c081178c3356, type: 3}
+  - {fileID: 21300000, guid: 344f4b89208f244cb860a8d2bcd8df48, type: 3}
+  - {fileID: 21300000, guid: 8783db89398ad4a4680a69aea9950ec7, type: 3}
+  - {fileID: 21300000, guid: 5a1bd2f93787f4422ad04fc8889c9cf0, type: 3}
+  - {fileID: 21300000, guid: f2baca8a5b8f3426e81a8ba43a6bc2e4, type: 3}
+  - {fileID: 21300000, guid: fc96616baacf34523b444f53a835bd39, type: 3}
+  - {fileID: 21300000, guid: bccae88bd2ad34704a25a71761e4aa83, type: 3}
+  - {fileID: 21300000, guid: e71240eb4d6894822920f7570332e44c, type: 3}
+  - {fileID: 21300000, guid: a001aefbab34c467a98e368f946fa2c6, type: 3}
+  - {fileID: 21300000, guid: 1a5f25acb75d946158bc89bea5027e02, type: 3}
+  - {fileID: 21300000, guid: 0f347ddcebb414cc08307dd641540f29, type: 3}
+  - {fileID: 21300000, guid: 23d38ffc91fe64c03ad1a309674b48a4, type: 3}
+  - {fileID: 21300000, guid: 32be8d5dec4e94fd6abef0085423c7b7, type: 3}
+  - {fileID: 21300000, guid: 044c389d9120c41caabe989d0b521fc4, type: 3}
+  - {fileID: 21300000, guid: fa1a1d3efab56460bb311fff2dc17c63, type: 3}
+  - {fileID: 21300000, guid: f3f787fef29af4dd7af046819b3c10d2, type: 3}
+  - {fileID: 21300000, guid: edb14dfe0d6d440eb85f1d4c65a5944b, type: 3}
+  - {fileID: 21300000, guid: 7ffd476f0e88546adbe1cfa1d35b30c6, type: 3}
+  - {fileID: 21300000, guid: 458818ff04f6f4fe2a617123526f6e3a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - img-roundedRect
+  - Chest-Open
+  - img-rewardStar
+  - img_soundOn
+  - img-ring-thin
+  - img-star-02
+  - Money
+  - img-sparkle
+  - Chest-Closed-Colored
+  - img_hapticOn
+  - Chest-Closed-Gray
+  - img_coin
+  - img-cloud
+  - img-triangle
+  - img-roundedRect-cr30
+  - img_spiral
+  - img-ring
+  - img-restart
+  - HandIcon
+  - img-checkmark
+  - particle-shiningCircle
+  - Chest-Closed-Black
+  - Speed
+  - img-pattern-14
+  - Square
+  - img-continue
+  - slider1
+  - img_tutorialHand
+  - img-shiningCircle
+  - img-freeMove
+  - img_hapticOff
+  - img-checkersPattern
+  - img-sphere
+  - img-sphere-yellowish
+  - Chest-Gray
+  - img_video
+  - img-restore
+  - UpgradeBG
+  - Chest-Colored
+  - img-circle-glow
+  - img-privacy
+  - img-cloud-yellowish
+  - img-squareOutline
+  - img-circle100
+  - img _settings
+  - img_soundOff
+  - img-circle300
+  - img-heart
+  - particle-circle100
+  - Income
+  - img-star-01
+  - Gradient2D
+  - img-diamond
+  m_RenderDataMap: {}
+  m_Tag: Sprite Atlas
+  m_IsVariant: 0
