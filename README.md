@@ -1,4 +1,4 @@
-# cloth-craft-project-with-tuning-tool
+# cloth-craft-project-with-tuning-editor
 
 Fine feeling & fine adjustment of a mobile game project.
 
