@@ -30,7 +30,15 @@ src="https://img.youtube.com/vi/YJn0MqMc-u0/0.jpg"
     </div>
 
 
-## Scripting Preference Samples
+## Scripting Samples
+
+### Extendable pooling sample using scriptables
+
+<img width="344" alt="Screenshot 2023-11-24 at 13 34 39" src="https://github.com/bk-kurt/cloth-craft-project-with-tuning-editor/assets/128593759/7deba5e4-6cef-4411-ac55-880db35bda5a">
+
+
+<img width="344" alt="Screenshot 2023-11-24 at 13 30 28" src="https://github.com/bk-kurt/cloth-craft-project-with-tuning-editor/assets/128593759/a20eb8d7-bce5-42c8-aa36-58817b61ce18">
+
 
  ### Monosingleton as creational practicality
  ```C#
@@ -69,6 +77,7 @@ private IEnumerator SpawnExecutableForIdleState()
         }
     }
 ```
+
 
 ## License
 
