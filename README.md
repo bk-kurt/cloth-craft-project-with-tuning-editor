@@ -30,7 +30,7 @@ src="https://img.youtube.com/vi/YJn0MqMc-u0/0.jpg"
     </div>
 
 
-## Scripting
+## Scripting Preference Samples
 
  ### Monosingleton as creational practicality
  ```C#
