@@ -1,14 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool : MonoSingleton<ObjectPool>
+public class ObjectPool : PersistentSingleton<ObjectPool>
 {
     public List<PoolSO> poolsSO;
     private Dictionary<string, Queue<GameObject>> poolDictionary;
 
-    private void Awake()
+    protected override void Awake()
     {
-        DontDestroyOnLoad(gameObject);
         InitializePools();
     }
 
@@ -29,8 +28,8 @@ public class ObjectPool : MonoSingleton<ObjectPool>
 
         for (int i = 0; i < size; i++)
         {
-            GameObject newObj = Instantiate(prefab, transform); // Instantiate under the pool container
-            newObj.name = prefab.name; // Ensure the name is consistent for pooling logic.
+            GameObject newObj = Instantiate(prefab, transform);
+            newObj.name = prefab.name;
             newObj.SetActive(false);
             objectQueue.Enqueue(newObj);
         }
@@ -48,8 +47,6 @@ public class ObjectPool : MonoSingleton<ObjectPool>
 
         if (poolDictionary[tag].Count == 0)
         {
-            // Optionally instantiate a new one if the pool is empty.
-            // This is a design choice and should be used with caution.
             Debug.LogWarning($"All objects in pool {tag} are in use. Instantiating a new one.");
             return Instantiate(poolDictionary[tag].Peek()); // Peek to get the prefab reference.
         }
@@ -62,10 +59,8 @@ public class ObjectPool : MonoSingleton<ObjectPool>
 
     private void ResetObjectState(GameObject objectToReset)
     {
-        // Reset the object's state here. This method should be customized to fit your game's needs.
         objectToReset.transform.position = Vector3.zero;
         objectToReset.transform.rotation = Quaternion.identity;
-        // Additionally, reset any other necessary components to their default states.
     }
 
     public void ReturnObjectToPool(string tag, GameObject objectToReturn)
@@ -81,8 +76,4 @@ public class ObjectPool : MonoSingleton<ObjectPool>
         objectToReturn.SetActive(false);
         poolDictionary[tag].Enqueue(objectToReturn);
     }
-    
-    // This method has been removed to avoid confusion with objects not managed by the pool.
-    // If an object not managed by the pool needs to be destroyed,
-    // it should be handled explicitly outside of the pooling logic.
 }

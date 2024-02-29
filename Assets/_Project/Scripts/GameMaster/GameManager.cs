@@ -1,5 +1,5 @@
 
-public class GameManager : MonoSingleton<GameManager>
+public class GameManager : PersistentSingleton<GameManager>
 {
     public Player player;
     public AudioManager audioManager;
