@@ -40,26 +40,57 @@ src="https://img.youtube.com/vi/YJn0MqMc-u0/0.jpg"
 <img width="344" alt="Screenshot 2023-11-24 at 13 30 28" src="https://github.com/bk-kurt/cloth-craft-project-with-tuning-editor/assets/128593759/a20eb8d7-bce5-42c8-aa36-58817b61ce18">
 
 
- ### Monosingleton as creational practicality
+ ### Utiliziation of "Persistent Singleton" as creational practicality sample
  ```C#
-public class MonoSingleton<T> : MonoBehaviour where T: MonoSingleton<T>
-{
-    private static volatile T instance = null;
-    public static T Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance=FindObjectOfType(typeof(T)) as T;
+public class PersistentSingleton<T> : MonoBehaviour where T : Component {
+        [Tooltip("if this is true, this singleton will auto detach if it finds itself parented on awake")]
+        public bool unParentOnAwake = true;
+
+        public static bool HasInstance => instance != null;
+        public static T Current => instance;
+
+        protected static T instance;
+
+        public static T Instance {
+            get {
+                if (instance == null) {
+                    instance = FindFirstObjectByType<T>();
+                    if (instance == null) {
+                        GameObject obj = new GameObject();
+                        obj.name = typeof(T).Name + "AutoCreated";
+                        instance = obj.AddComponent<T>();
+                    }
+                }
+
+                return instance;
             }
-            return instance;
+        }
+
+        protected virtual void Awake() => InitializeSingleton();
+
+        protected virtual void InitializeSingleton() {
+            if (!Application.isPlaying) {
+                return;
+            }
+
+            if (unParentOnAwake) {
+                transform.SetParent(null);
+            }
+
+            if (instance == null) {
+                instance = this as T;
+                DontDestroyOnLoad(transform.gameObject);
+                enabled = true;
+            } else {
+                if (this != instance) {
+                    Destroy(this.gameObject);
+                }
+            }
         }
     }
-}
 ```
 
- ### Factory use case
+ ### Factory use case (factory wasnt essential for this non-heavy scenario, so just a sample use case)
 ```C#
 private IEnumerator SpawnExecutableForIdleState()
     {
@@ -67,7 +98,6 @@ private IEnumerator SpawnExecutableForIdleState()
 
         while (true)
         {
-            // Only try to spawn if there's an available slot.
             if (IsSlotAvailable())
             {
                 ExecutableObject newObject = factory.CreateObject();
